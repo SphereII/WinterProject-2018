@@ -23,25 +23,25 @@
 			<property name="Meshfile" value="#@modfolder:Resources/XmasDeco.unity3d?SnowShovel_X" /> 
 			<property name="DropMeshfile" value="#@modfolder:Resources/XmasDeco.unity3d?SnowShovel_X" />
 			<property name="CustomIcon" value="snowShovel" />
-      <effect_group name="Base Effects">
-        <passive_effect name="MaxRange" operation="base_set" value="3.4"/>
-        <passive_effect name="BlockRange" operation="base_set" value="4"/>
-        <passive_effect name="EntityDamage" operation="base_set" value="13"/>
-        <!-- meleeToolShovelIron -->
-        <passive_effect name="BlockDamage" operation="base_set" value="18"/>
-        <passive_effect name="DamageModifier" operation="perc_add" value="-.7" tags="wood"/>
-        <passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
-        <passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="metal"/>
-        <passive_effect name="DamageModifier" operation="perc_add" value="1" tags="earth"/>
-        <!-- Added the bonus for snow -->
-        <passive_effect name="DamageModifier" operation="perc_add" value="1.5" tags="snow"/>
-        <passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
-        <passive_effect name="StaminaLoss" operation="base_set" value="16" tags="primary"/>
-        <passive_effect name="DegradationMax" operation="base_set" value="200,800" tier="1,6"/>
-        <passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
-        <passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
-        <passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
-      </effect_group>
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="3.4"/>
+				<passive_effect name="BlockRange" operation="base_set" value="4"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="13"/>
+				<!-- meleeToolShovelIron -->
+				<passive_effect name="BlockDamage" operation="base_set" value="18"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.7" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.75" tags="metal"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="earth"/>
+				<!-- Added the bonus for snow -->
+				<passive_effect name="DamageModifier" operation="perc_add" value="1.5" tags="snow"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="16" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="200,800" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+			</effect_group>
 		</item>
 		<item name="candyCane">
 			<property name="Extends" value="meleeClubIron" />
@@ -49,9 +49,7 @@
 			<property name="RepairTools" value="resourceRepairKit" />
 			<property name="Meshfile" value="#@modfolder:Resources/XmasDeco.unity3d?CandyCane_X" />
 			<property name="CustomIcon" value="candyCane" />
-      <property name="DescriptionKey" value="A tasty treat used to smash the face of the zombies." />
-
-    </item>
+		</item>
 		<item name="waxCandle">
 			<property name="Class" value="ItemClassTorch" />
 			<property name="CustomIcon" value="waxcandle" />
@@ -67,36 +65,33 @@
 				<property name="Blockname" value="beesWaxCandle" />
 			</property>
 			<property name="Group" value="Basics,Decor/Miscellaneous" />
-      <property name="DescriptionKey" value="A pretty little wax candle." />
+		</item>
 
-    </item>
+		<!-- Copied the corn for the cookies -->
+		<item  name="Cookies">
+			<property name="HoldType" value="31"/>
+			<property name="DisplayType" value="food"/>
+			<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Stacknumber" value="50"/>
+			<!-- STK food -->
+			<property name="EconomicValue" value="1"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+				<!-- jar from cooking food <property name="Create_item" value="drinkJarEmpty"/> -->
+			</property>
+			<property name="Group" value="Food/Cooking"/>
 
-    <!-- Copied the corn for the cookies -->
-    <item  name="Cookies">
-      <property name="DescriptionKey" value="Cookies" />
-      <property name="HoldType" value="31"/>
-      <property name="DisplayType" value="food"/>
-      <property name="Meshfile" value="Items/Misc/parcelPrefab"/>
-      <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-      <property name="Material" value="Morganic"/>
-      <property name="Stacknumber" value="50"/>
-      <!-- STK food -->
-      <property name="EconomicValue" value="1"/>
-      <property class="Action0">
-        <property name="Class" value="Eat"/>
-        <property name="Delay" value="1.0"/>
-        <property name="Use_time" value="..."/>
-        <property name="Sound_start" value="player_eating"/>
-        <!-- jar from cooking food <property name="Create_item" value="drinkJarEmpty"/> -->
-      </property>
-      <property name="Group" value="Food/Cooking"/>
-
-      <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="5"/>
-        <!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPerkDisplay" operation="add" value="@foodSatiationPSec"/> -->
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
-      </effect_group>
-    </item>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodAmount" operation="add" value="5"/>
+				<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodPerkDisplay" operation="add" value="@foodSatiationPSec"/> -->
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
 	</append>
 </configs>
