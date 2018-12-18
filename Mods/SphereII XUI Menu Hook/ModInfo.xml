@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="SphereII XUI Menu Hook" />
+		<Description value="A SDX mod to add hooks into the menu system" />
+		<Author value="sphereii" />
+		<Version value="1.0.0.0" />
+		<Website value="" />
+	</ModInfo>
+</xml>

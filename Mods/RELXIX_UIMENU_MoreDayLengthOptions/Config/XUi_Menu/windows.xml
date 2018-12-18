@@ -1,0 +1,3 @@
+<configs>
+	<set xpath="/windows/window[@name='newContinueGame']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='Basic']/grid/gameoption[@name='DayLightLength']/@values">2, 4, 6, 8, 10, 12, 14, 16, 18, 20 ,22</set>
+</configs>

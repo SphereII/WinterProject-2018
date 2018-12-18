@@ -1,0 +1,17 @@
+<configs>
+
+  <append xpath="/entity_classes">
+    <entity_class name="Mannequin_01" extends="invisibleAnimal">
+      <!--property name="Class" value="EntityToBlock, Mods"/>
+      <property name="ToBlock" value="Mannequin_01" / -->
+
+      <property name="LootDropProb" value="1"/>
+      <!-- Whether it drops a loot bag on death or not. -->
+      <!-- <property name="LootListOnDeath" value="45"/> -->
+      <property name="CorpseBlock" value="Mannequin_01"/>
+
+    </entity_class>
+  </append>
+
+
+</configs>

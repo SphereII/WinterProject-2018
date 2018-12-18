@@ -1,0 +1,37 @@
+<configs>
+	<!-- New Window -->
+	<!-- Note - Technically easier to just append to xpath="/windows" - However, wanted to test and demonstrate placing at a specific spot in the file -->
+	<insertBefore xpath="/windows/window[@name='HUDLeftStatBars']" >
+		<window name="window_RELXIXUI_playerStatsHUD" width="400" height="200" pos="178,92" controller="HUDStatBar" visible="{statvisible}" anchor="LeftBottom">
+			<rect name="rect_playerStats" controller="PlayerStatsWindow">
+				<rect name="rect_playerStatsTemp" >
+					<sprite name="sprite_playerStatsTempBorder" depth="1" pos="3, 0" width="105" height="24" type="sliced" color="0,0,0,100" />
+					<sprite name="sprite_playerStatsTempBackground" depth="1" pos="4, -1" width="103" height="22" type="sliced" color="64,64,64,100" />
+					<sprite name="sprite_playerStatsCold" depth="2" pos="4,-1" style="icon22px" sprite="ui_game_symbol_cold"/>
+					<label name="label_playerStatsTemp" depth="2" pos="27, -2" width="200" font_size="20" text=" [DECEA3]{playercoretemp}[-]" />
+					<sprite name="sprite_playerStatsHot" depth="2" pos="85,-1" style="icon22px" sprite="ui_game_symbol_hot"/>
+				</rect>
+				
+				<rect name="rect_playerStatsHunger" >
+					<sprite name="sprite_playerStatsHungerBorder" depth="1" pos="3, -27" width="105" height="24" type="sliced" color="0,0,0,100" />
+					<sprite name="sprite_playerStatsHungerBackground" depth="1" pos="4, -28" width="103" height="22" type="sliced" color="64,64,64,100" />
+					<sprite name="sprite_playerStatsHungerFill" depth="1" pos="4, -28" width="103" height="22" type="filled" color="52,174,86,192" fill="{playerfoodfill}" />
+					<sprite name="sprite_playerStatsHunger" depth="2" pos="4,-28" style="icon22px" sprite="ui_game_symbol_hunger"/>
+					<label name="label_playerStatsHunger" depth="2" pos="35,-29" width="200" font_size="20" text=" [DECEA3]{playerfood}%[-]" />
+					<!-- Just heere because I didn't feel like removing the icon marker fully in case I want to re-enable it -->
+					<!--<sprite name="sprite_playerStatsFork" depth="2" pos="85,-28" style="icon22px" sprite="ui_game_symbol_fork"/>-->
+				</rect>
+				
+				<rect name="rect_playerStatsThirst" >
+					<sprite name="sprite_playerStatsThirstBorder" depth="1" pos="3, -54" width="105" height="24" type="sliced" color="0,0,0,100" />
+					<sprite name="sprite_playerStatsThirstBackground" depth="1" pos="4, -55" width="103" height="22" type="sliced" color="64,64,64,100" />
+					<sprite name="sprite_playerStatsThirstFill" depth="1" pos="4, -55" width="103" height="22" type="filled" color="52,137,167,192" fill="{playerwaterfill}" />
+					<sprite name="sprite_playerStatsThirst" depth="2" pos="4,-55" style="icon22px" sprite="ui_game_symbol_thirst"/>
+					<label name="label_playerStatsThirst" depth="2" pos="35,-56" width="200" font_size="20" text=" [DECEA3]{playerwater}%[-]" />
+					<!-- Just heere because I didn't feel like removing the icon marker fully in case I want to re-enable it -->
+					<!--<sprite name="sprite_playerStatsWater" depth="2" pos="85,-55" style="icon22px" sprite="ui_game_symbol_water"/>-->
+				</rect>
+			</rect>
+		</window>
+	</insertBefore>
+</configs>

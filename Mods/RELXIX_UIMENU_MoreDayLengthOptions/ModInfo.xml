@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="RELXIX - UIMENU - MoreDayLightLengthOptions" />
+		<Description value="This adds the option 2,4,6,8,10,20,22 hours as Day Light Length options for those who want really short or really long days." />
+		<Author value="Red Eagle LXIX" />
+		<Version value="1.0" />
+		<Website value="http://7daystodie.com" />
+	</ModInfo>
+</xml>

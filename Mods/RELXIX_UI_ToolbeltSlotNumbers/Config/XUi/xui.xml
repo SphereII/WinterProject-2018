@@ -1,0 +1,6 @@
+<configs>
+	<!-- Add entry for new window -->
+  <insertBefore xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']//window[@name='windowToolbelt']" >
+    <window name="window_RELXIXUI_toolbeltSlotNumbers" />
+  </insertBefore>
+</configs>

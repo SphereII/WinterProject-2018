@@ -1,0 +1,21 @@
+<configs>
+		<append xpath="/buffs">	
+			<buff name="buffSnowballFreezing" name_key="buffElementFreezingName" description_key="buffElementFreezingDesc" tooltip_key="buffElementFreezingTooltip" icon="ui_game_symbol_cold" icon_color="255,0,0" icon_blink="true">
+				<damage_type value="cold"/>
+				<stack_type value="replace"/>
+				<duration value="4.5"/>
+				<effect_group>
+					<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_subtract" value="2" />
+					<passive_effect name="AttributeLevel" tags="attStrength" operation="base_subtract" value="2" />
+					<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffPerkAbilityUpdate"/>
+
+					<passive_effect name="StaminaLossMaxMult" operation="perc_add" value="5"/>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="2" effect_name="Cold"/>
+					<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Cold"/>
+					
+				</effect_group>
+			</buff>
+		</append>	
+		
+</configs>

@@ -1,0 +1,13 @@
+<configs>
+	<!-- New Window -->
+	<append xpath="/windows" >
+		<!-- R.E. LXIX --> <!-- Window that displays Zombie Kills with dynamic color change icon (black to white) -->
+		<window name="window_RELXIXUI_ZKIcoChng" width="400" height="200" anchor="CenterBottom" pos="-342,87" controller="ToolbeltWindow" visible="{toolbeltvisible}">
+			<rect name="rect_ZKIcoChng" controller="PlayerStatsWindow">
+				<sprite name="sprite_ZKIcoChngZKillBkgrnd" depth="0" pos="-37,-54" width="65" height="24" sprite="ui_game_header_fill" type="sliced" fillcenter="false" color="0,0,0,100" />
+				<sprite name="sprite_ZKIcoChngIcoZombie" depth="2" pos="4,-55" style="icon22px" color="{playerzombiekills},{playerzombiekills},{playerzombiekills}" sprite="ui_game_symbol_zombie"/>
+				<label name="label_ZKIcoChngZKillCount" depth="2" pos="-201, -56" width="200" font_size="20" text=" [DECEA3]{playerzombiekills}[-]" justify="right" effect="outline" />
+			</rect>
+		</window>
+	</append>
+</configs>

@@ -1,0 +1,37 @@
+<configs>
+	<!-- Add entry for new window -->
+	<append xpath="/xui/ruleset[@name='default']/window_group[@name='map']" >
+		<window name="window_RELXIXUI_menuStatsHUD" />  <!-- R.E. LXIX --> <!-- Window that displays Stats when on menus - Delete this line to remove these items -->
+	</append>
+	<append xpath="/xui/ruleset[@name='default']/window_group[@name='players']" >
+		<window name="window_RELXIXUI_menuStatsHUD" />  <!-- R.E. LXIX --> <!-- Window that displays Stats when on menus - Delete this line to remove these items -->
+	</append>
+	<append xpath="/xui/ruleset[@name='default']/window_group[@controller]" >
+		<window name="window_RELXIXUI_menuStatsHUD" />  <!-- R.E. LXIX --> <!-- Window that displays Stats when on menus - Delete this line to remove these items -->
+	</append>
+	
+	<!-- below is for testing wich controllers are not compatible with the fill for playerfoodfill and playerwaterfill when added to menus -->
+<!-- 
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@controller='XUiC_CraftingWindowGroup']/window[@name='window_RELXIXUI_menuStatsHUD']" ></remove>
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@controller='XUiC_LootWindowGroup']/window[@name='window_RELXIXUI_menuStatsHUD']" ></remove>
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@controller='XUiC_QuestTurnInWindowGroup']/window[@name='window_RELXIXUI_menuStatsHUD']" ></remove>
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@controller='XUiC_VehicleWindowGroup']/window[@name='window_RELXIXUI_menuStatsHUD']" ></remove>
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@controller='XUiC_VehicleStorageWindowGroup']/window[@name='window_RELXIXUI_menuStatsHUD']" ></remove>
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@controller='XUiC_AssembleWindowGroup']/window[@name='window_RELXIXUI_menuStatsHUD']" ></remove>
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@controller='Radial']/window[@name='window_RELXIXUI_menuStatsHUD']" ></remove>
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@controller='XUiC_SkillWindowGroup']/window[@name='window_RELXIXUI_menuStatsHUD']" ></remove>
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@controller='XUiC_QuestWindowGroup']/window[@name='window_RELXIXUI_menuStatsHUD']" ></remove>
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@controller='XUiC_JournalWindowGroup']/window[@name='window_RELXIXUI_menuStatsHUD']" ></remove>
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@controller='XUiC_TraderWindowGroup']/window[@name='window_RELXIXUI_menuStatsHUD']" ></remove>
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@controller='XUiC_DialogWindowGroup']/window[@name='window_RELXIXUI_menuStatsHUD']" ></remove>
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@controller='XUiC_PowerSourceWindowGroup']/window[@name='window_RELXIXUI_menuStatsHUD']" ></remove>
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@controller='XUiC_PowerTriggerWindowGroup']/window[@name='window_RELXIXUI_menuStatsHUD']" ></remove>
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@controller='XUiC_PowerRangedTrapWindowGroup']/window[@name='window_RELXIXUI_menuStatsHUD']" ></remove>
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@controller='XUiC_PowerCameraWindowGroup']/window[@name='window_RELXIXUI_menuStatsHUD']" ></remove>
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@controller='XUiC_PoweredSpotlightWindowGroup']/window[@name='window_RELXIXUI_menuStatsHUD']" ></remove>
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@controller='XUiC_MessageBoxWindowGroup']/window[@name='window_RELXIXUI_menuStatsHUD']" ></remove>
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@controller='XUiC_CharacterSheetWindowGroup']/window[@name='window_RELXIXUI_menuStatsHUD']" ></remove>
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@controller='XUiC_WorkstationWindowGroup']/window[@name='window_RELXIXUI_menuStatsHUD']" ></remove>
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@controller='XUiC_CreativeWindowGroup']/window[@name='window_RELXIXUI_menuStatsHUD']" ></remove>
+-->
+</configs>

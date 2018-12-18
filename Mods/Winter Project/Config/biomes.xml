@@ -1,0 +1,60 @@
+﻿<configs>
+
+  <!-- Adjust RemOve the fillup to line, so we can lay down the snow everywhere -->
+  <remove xpath="//worldgeneration/biomes/biome/subbiome" />
+
+  <!-- filluptorg doesn't have a depth, so we'll only target the top level, which has a depth -->
+  <set xpath="/worldgeneration/biomes/biome//layers/layer[@depth][1]/@depth">8</set>
+  <set xpath="/worldgeneration/biomes/biome//layers/layer[@depth][1]/@blockname">terrSnow</set>
+
+  <!-- change the gravel patches to be more appropriate, like the ice sheets -->
+  <set xpath="/worldgeneration/biomes/biome//layers/layer[@depth][1]/resource/@blockname">terrIce</set>
+  <set xpath="/worldgeneration/biomes/biome//layers/layer[@depth][1]/resource/@prob">0.5</set>
+  <setattribute xpath="/worldgeneration/biomes/biome/layers/layer[@depth][1]/resource" name="cluster">0</setattribute>
+
+  <!-- Change the particle effect for the biomes, so we don't get a sandstorm -->
+  <set xpath="/worldgeneration/biomes/biome/weather/ParticleEffect/@prefab">ParticleEffects/p_snowstorm1</set>
+
+  <!-- Change the fill up to with ice, instead of water. I don't think this does anything though -->
+  <set xpath="/worldgeneration/biomes/biome//layers/layer[@filluptorg]/@blockname">terrIce</set>
+
+  <!-- Set all global temperatures to be the same -->
+  <set xpath="/worldgeneration/biomes/biome/weather/Temperature/@min">-94</set>
+  <set xpath="/worldgeneration/biomes/biome/weather/Temperature/@max">-94</set>
+
+  <!-- Remove all surface biome decorations -->
+  <remove xpath="/worldgeneration/biomes/biome//decorations/decoration" />
+
+
+  <!-- now that we've cleaned it up, let's lay down our own decorations -->
+  <append xpath="/worldgeneration/biomes/biome//decorations">
+    <!-- From the XMas Pack -->
+    <decoration type="block" blockname="ChristmasTreeNaughty" prob="0.00001" />
+    <decoration type="block" blockname="ChristmasTreeNice" prob="0.00001" />
+    <!-- from Winter entities pack --> 
+    <decoration type="block" blockname="SnowmanBlock" prob="0.00001" />
+    <decoration type="block" blockname="SnowcopBlock" prob="0.00001" />
+    
+    <decoration type="block" blockname="cntBirdnest" prob="0.0004" />
+    <decoration type="block" blockname="rock05" prob =".0002"/>
+    <decoration type="block" blockname="rock06" prob =".0002"/>
+    <decoration type="block" blockname="rock07" prob =".0002"/>
+    <decoration type="block" blockname="treeSnowyDeadBush" prob="0.0003" rotatemax="7" />
+    <decoration type="block" blockname="treeSnowyGrassDiagonal" prob="0.0002" />
+  </append>
+
+  <!-- Clear out the roads -->
+  <!-- Remove the POIs, and add in our own, since we can't recursively remove -->
+  <remove xpath="/worldgeneration/pois/poi[@name='City Asphalt']"/>
+  <remove xpath="/worldgeneration/pois/poi[@name='Country Road Asphalt']"/>
+  <remove xpath="/worldgeneration/pois/poi[@name='Road Gravel']"/>
+
+  <!-- Re-adding the road POIs without their decals -->
+  <append xpath="/worldgeneration/pois">
+    <poi name="City Asphalt" poimapcolor="#1" blockname="terrSnow" />
+    <poi name="Country Road Asphalt" poimapcolor="#2" blockname="terrSnow"/>
+    <poi name="Road Gravel" poimapcolor="#3" blockname="terrSnow"/>
+  </append>
+
+
+</configs>

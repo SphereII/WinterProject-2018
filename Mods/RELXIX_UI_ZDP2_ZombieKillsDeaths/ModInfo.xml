@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="RELXIX - UI - ZDP - Zombie Kills and Deaths" />
+		<Description value="Adds Zombie Kills and Deaths counters to the HUD" />
+		<Author value="Red Eagle LXIX" />
+		<Version value="1.0.1" />
+		<Website value="http://7daystodie.com" />
+	</ModInfo>
+</xml>

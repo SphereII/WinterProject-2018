@@ -1,0 +1,12 @@
+<configs>
+	<!-- Add entry for new window -->
+	<append xpath="/xui/ruleset[@name='default']/window_group[@controller]" >
+		<window name="window_RELXIXUI_menuTime" />
+	</append>
+	<append xpath="/xui/ruleset[@name='default']/window_group[@name='map']" >
+		<window name="window_RELXIXUI_menuTime" />
+	</append>
+	<append xpath="/xui/ruleset[@name='default']/window_group[@name='players']" >
+		<window name="window_RELXIXUI_menuTime" />
+	</append>
+</configs>

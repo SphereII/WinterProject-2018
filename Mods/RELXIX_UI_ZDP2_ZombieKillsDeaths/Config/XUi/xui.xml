@@ -1,0 +1,9 @@
+<configs>
+	<!-- This should log as a WRN for unable to remove if ZDP1 is not installed since we're trying to remove it to replace it. -->
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']/window[@name='window_RELXIXUI_ZKIcoChng']" />
+	<!-- below is the window for the mod -->
+	<!-- Add entry for new window -->
+	<append xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']" >
+		<window name="window_RELXIXUI_ZKDIcoChng" />
+	</append>
+</configs>

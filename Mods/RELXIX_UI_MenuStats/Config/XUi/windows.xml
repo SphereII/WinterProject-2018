@@ -1,0 +1,27 @@
+<configs>
+	<!-- New Window -->
+	<append xpath="/windows" >
+		<window name="window_RELXIXUI_menuStatsHUD" width="400" height="200" pos="302,-18" anchor="CenterTop">
+		<rect name="rect_menuStats" controller="PlayerStatsWindow">
+			<sprite name="sprite_menuStatsBackground" depth="0" pos="4,0" width="250" height="24" type="sliced" fillcenter="false" color="0,0,0,100" sprite="ui_game_header_fill" />
+			<sprite name="sprite_menuStatsCold" depth="2" pos="6,-1" width="16" style="icon22px" sprite="ui_game_symbol_cold"/>
+			<label name="label_menuStatsTemp" depth="2" pos="24, -2" width="200" font_size="20" text=" [DECEA3]{playercoretemp}[-]" />
+			<sprite name="sprite_menuStatsHot" depth="2" pos="84,-1" width="16" style="icon22px" sprite="ui_game_symbol_hot"/>
+			
+			<sprite name="sprite_menuStatsHunger" depth="2" pos="114,-1" style="icon22px" sprite="ui_game_symbol_hunger"/>
+			<!-- Next line is technically correct but the fill function causes issues when combined with some other controllers and thus for full menu system compatibility needed to be disabled -->
+			<!--<sprite name="sprite_menuStatsHungerFilled" depth="2" pos="113,0" style="icon22px" height="24" width="24" type="filled" filldirection="vertical" color="52,174,86,192" fill="{playerfoodfill}" sprite="ui_game_symbol_hunger"/>-->
+			<label name="label_menuStatsHunger" depth="2" pos="140,-2" width="200" font_size="20" text=" [DECEA3]{playerfood}%[-]" />
+			<!-- Just heere because I didn't feel like removing the icon marker fully in case I want to re-enable it -->
+			<!--<sprite name="sprite_menuStatsFork" depth="2" pos="114,-1" style="icon22px" sprite="ui_game_symbol_fork"/>-->
+			
+			<sprite name="sprite_menuStatsThirst" depth="2" style="icon22px" pos="184,-1" sprite="ui_game_symbol_thirst"/>
+			<!-- Next line is technically correct but the fill function causes issues when combined with some other controllers and thus for full menu system compatibility needed to be disabled -->
+			<!--<sprite name="sprite_menuStatsThirstFilled" depth="2" pos="183,0" style="icon22px" height="24" width="24" type="filled" filldirection="vertical" color="52,137,167,192" fill="{playerwaterfill}" sprite="ui_game_symbol_thirst"/>-->
+			<label name="label_menuStatsThirst" depth="2" pos="212,-2" width="200" font_size="20" text=" [DECEA3]{playerwater}%[-]" />
+			<!-- Just heere because I didn't feel like removing the icon marker fully in case I want to re-enable it -->
+			<!--<sprite name="sprite_menuStatsWater" depth="2" pos="184,-1" style="icon22px" sprite="ui_game_symbol_water"/>-->
+		</rect>
+		</window>
+	</append>
+</configs>

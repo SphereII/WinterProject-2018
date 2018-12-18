@@ -1,0 +1,21 @@
+<configs>
+	<!-- Changes below are based on this stock file value -->
+<!--
+	<window name="windowCompass" style="compass.window" controller="CompassWindow">
+		<sprite style="compass.window.background.border"/>
+		<sprite style="compass.window.background"/>
+		<sprite style="compass.window.compass.background">
+		</sprite>
+		<texture style="compass.window.compass.texture" name="compassTexture" rect_size="0.25,1" rect_offset=".8,0" >
+		</texture>
+		<sprite pos="240,-60" sprite="" color="255,255,255,255" globalopacitymod="1.8">
+			<label depth="2" width="300" height="30" text="{daytitle}: {day|always}  {timetitle}: {time|always}" font_size="28" pivot="center" effect="outline" upper_case="true" justify="center"/>
+		</sprite>
+	</window>
+-->
+	
+	<!-- Add to existing window -->
+	<insertAfter xpath="/windows/window[@name='windowCompass']/texture[@name='compassTexture']" >
+		<sprite name="sprite_compassCenterHighlight" sprite="ui_game_header_fill" depth="10" width="2" height="43" pos="239,0" type="sliced" fillcenter="false" color="255,255,0,35" /> <!-- This adds the center bar to the compass -->
+	</insertAfter>
+</configs>

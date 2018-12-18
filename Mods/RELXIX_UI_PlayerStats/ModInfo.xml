@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="RELXIX - UI - Player Stats" />
+		<Description value="This adds the display of Food, Water, and Temp to the main HUD" />
+		<Author value="Red Eagle LXIX" />
+		<Version value="1.0.1" />
+		<Website value="http://7daystodie.com" />
+	</ModInfo>
+</xml>

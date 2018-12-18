@@ -1,0 +1,6 @@
+<configs>
+	<!-- Add entry for new window -->
+	<append xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']" >
+		<window name="window_RELXIXUI_ZKIcoChng" />
+	</append>
+</configs>

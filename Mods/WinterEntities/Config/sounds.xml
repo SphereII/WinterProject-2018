@@ -1,0 +1,109 @@
+<configs>
+  	
+	<append xpath="/Sounds">
+		<SoundDataNode name="AbominableAlert">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="3" range="100" volume="25" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+			<AudioClip ClipName="#@modfolder:Resources/AbominableSounds.unity3d?roar1" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="1" />
+			<MaxVoices name="10" />
+			<maxVoicesPerEntity name="1" />
+			<MaxRepeatRate name="1.111" />
+		</SoundDataNode>
+		<SoundDataNode name="AbominableAttack">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="3" range="100" volume="25" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+			<AudioClip ClipName="#@modfolder:Resources/AbominableSounds.unity3d?grrr7" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="1" />
+			<MaxVoices name="10" />
+			<maxVoicesPerEntity name="1" />
+			<MaxRepeatRate name="1.111" />
+		</SoundDataNode>
+		<SoundDataNode name="AbominableRandom">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="3" range="100" volume="25" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+			<AudioClip ClipName="#@modfolder:Resources/AbominableSounds.unity3d?grrr1" />
+			<AudioClip ClipName="#@modfolder:Resources/AbominableSounds.unity3d?grrr2" />
+			<AudioClip ClipName="#@modfolder:Resources/AbominableSounds.unity3d?grrr3" />
+			<AudioClip ClipName="#@modfolder:Resources/AbominableSounds.unity3d?grrr4" />
+			<AudioClip ClipName="#@modfolder:Resources/AbominableSounds.unity3d?grrr5" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="1" />
+			<MaxVoices name="10" />
+			<maxVoicesPerEntity name="1" />
+			<MaxRepeatRate name="1.111" />
+		</SoundDataNode>
+		<SoundDataNode name="AbominableHurt">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="3" range="100" volume="25" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+			<AudioClip ClipName="#@modfolder:Resources/AbominableSounds.unity3d?hit1" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="1" />
+			<MaxVoices name="10" />
+			<maxVoicesPerEntity name="1" />
+			<MaxRepeatRate name="1.111" />
+		</SoundDataNode>
+		<SoundDataNode name="AbominableSense">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="3" range="100" volume="25" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+			<AudioClip ClipName="#@modfolder:Resources/AbominableSounds.unity3d?grrr6" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="1" />
+			<MaxVoices name="10" />
+			<maxVoicesPerEntity name="1" />
+			<MaxRepeatRate name="1.111" />
+		</SoundDataNode>
+		<SoundDataNode name="AbominableDie">
+			<AudioSource name="Sounds/AudioSource_VO" />
+			<Noise ID="3" range="100" volume="25" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+			<AudioClip ClipName="#@modfolder:Resources/AbominableSounds.unity3d?die" />
+			<LocalCrouchVolumeScale name="1.0" />
+			<CrouchNoiseScale name="0.5" />
+			<NoiseScale name="1" />
+			<MaxVoices name="10" />
+			<maxVoicesPerEntity name="1" />
+			<MaxRepeatRate name="1.111" />
+		</SoundDataNode>
+
+		<SoundDataNode name="plasmaWarn"> 
+			<AudioSource name="Sounds/AudioSource_Pain"/>
+			<AudioClip ClipName="#@modfolder:Resources/zedSounds.unity3d?plasmaWarn"/>
+			<Channel name="Mouth"/>
+			<Priority name="3"/>
+			<LocalCrouchVolumeScale name="1.0"/> 
+			<CrouchNoiseScale name="0.5"/> 
+			<NoiseScale name="1"/> 
+			<MaxVoices name="10"/> 
+			<MaxRepeatRate name="5"/> 
+		</SoundDataNode>
+		<SoundDataNode name="plasmaShot"> 
+			<AudioSource name="Sounds/AudioSource_Creatures"/>
+			<AudioClip ClipName="#@modfolder:Resources/zedSounds.unity3d?plasmaShot"/>
+			<Channel name="Mouth"/>
+			<Priority name="2"/>
+			<LocalCrouchVolumeScale name="1.0"/> 
+			<CrouchNoiseScale name="0.5"/> 
+			<NoiseScale name="1"/> 
+			<MaxVoices name="10"/> 
+			<MaxRepeatRate name="1.8"/> 
+		</SoundDataNode>
+		<SoundDataNode name="plasmaMulti"> 
+			<AudioSource name="Sounds/AudioSource_Creatures"/>
+			<AudioClip ClipName="#@modfolder:Resources/zedSounds.unity3d?plasmaMulti"/>
+			<Channel name="Mouth"/>
+			<Priority name="2"/>
+			<LocalCrouchVolumeScale name="1.0"/> 
+			<CrouchNoiseScale name="0.5"/> 
+			<NoiseScale name="1"/> 
+			<MaxVoices name="10"/> 
+			<MaxRepeatRate name="1.8"/> 
+		</SoundDataNode>
+	</append>
+</configs>

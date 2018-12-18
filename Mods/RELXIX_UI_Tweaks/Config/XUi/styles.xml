@@ -1,0 +1,15 @@
+<configs>
+	<!-- Changes below are based on this stock file value -->
+<!--
+	<style name="compass.window.background.border" type="sprite">
+	<style_entry name="depth" value="0"/>
+	<style_entry name="sprite" value="ui_game_header_fill"/>
+	<style_entry name="size" value="385,43"/>
+	<style_entry name="pos" value="48,0"/>
+	<style_entry name="type" value="sliced"/>
+	<style_entry name="color" value="0,0,0,100"/>
+	</style>
+-->
+	<!-- Modify existing style -->	
+	<set xpath="/styles/style[@name='compass.window.background.border']/style_entry[@name='size']/@value">384,43</set> <!-- 384 because the default width is 1 too wide -->
+</configs>
