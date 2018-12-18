@@ -1,0 +1,3 @@
+Key,Source,Context,Changes,English,French,German,Klingon,Spanish
+Winterquest_BasicSurvival,,Quest Info,KgNone,Welcome To the Winter Project,,,,
+Winterquest_BasicSurvival_offer,,Quest Info,KeyCon KgNone,"Welcome to the Winter Project\nExplore and try to survive in the frozen landscape of the Winter Project.\n\n-sphereii and xyth",,,,
