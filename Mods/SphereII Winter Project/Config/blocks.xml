@@ -1,0 +1,10 @@
+﻿<configs>
+  <append xpath="/blocks/block[@name='bed01']">
+    <property name="BuffsWhenWalkedOn" value="buffsmallBed"/>
+  </append>
+  <append xpath="/blocks/block[@name='bed02']">
+    <property name="BuffsWhenWalkedOn" value="buffsmallBed"/>
+  </append>
+
+
+</configs>

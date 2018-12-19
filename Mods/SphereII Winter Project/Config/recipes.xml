@@ -1,0 +1,5 @@
+﻿<configs>
+  <set xpath="/recipes/recipe[@name='bedroll']/ingredient[@name='resourceYuccaFibers']/@count">10</set>
+
+  
+</configs>

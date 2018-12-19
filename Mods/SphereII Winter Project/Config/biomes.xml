@@ -31,16 +31,17 @@
     <!-- From the XMas Pack -->
     <decoration type="block" blockname="ChristmasTreeNaughty" prob="0.00001" />
     <decoration type="block" blockname="ChristmasTreeNice" prob="0.00001" />
+    
     <!-- from Winter entities pack --> 
     <decoration type="block" blockname="SnowmanBlock" prob="0.00001" />
     <decoration type="block" blockname="SnowcopBlock" prob="0.00001" />
     
-    <decoration type="block" blockname="cntBirdnest" prob="0.0004" />
+    <decoration type="block" blockname="cntBirdnest" prob="0.0003" />
     <decoration type="block" blockname="rock05" prob =".0002"/>
     <decoration type="block" blockname="rock06" prob =".0002"/>
     <decoration type="block" blockname="rock07" prob =".0002"/>
     <decoration type="block" blockname="treeSnowyDeadBush" prob="0.0003" rotatemax="7" />
-    <decoration type="block" blockname="treeSnowyGrassDiagonal" prob="0.0002" />
+    <decoration type="block" blockname="treeSnowyGrassDiagonal" prob="0.0004" />
   </append>
 
   <!-- Clear out the roads -->

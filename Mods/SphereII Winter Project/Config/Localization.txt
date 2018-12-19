@@ -1,0 +1,3 @@
+Key,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
+buffsmallBed,items,Medical,KgNone,Small bed,,,,,
+buffsmallBedDesc,items,Medical,New,A small bed will help you rest up.,,,,,

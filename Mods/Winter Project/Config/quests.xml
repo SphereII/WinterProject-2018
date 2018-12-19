@@ -1,5 +1,0 @@
-﻿<configs>
-  <!-- Update with our starting description -->
-  <set xpath="/quests/quest/property[@name='offer_key' and @value='quest_BasicSurvival_offer']/@value">Winterquest_BasicSurvival_offer</set>
-  <set xpath="/quests/quest/property[@name='group_name_key' and @value='quest_BasicSurvival']/@value">Winterquest_BasicSurvival</set>
-</configs>
