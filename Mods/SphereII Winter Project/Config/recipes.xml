@@ -1,5 +1,9 @@
 ﻿<configs>
+  <!-- Reduces the amount of fibers for the bedroll -->
   <set xpath="/recipes/recipe[@name='bedroll']/ingredient[@name='resourceYuccaFibers']/@count">10</set>
 
-  
+  <!-- Increases the feather cost of every arrow -->
+  <set xpath="/recipes/recipe[ starts-with(@name, 'ammoArrow')]/ingredient[@name='resourceFeather']/@count">3</set>
+  <set xpath="/recipes/recipe[ starts-with(@name, 'ammoCrossbowBolt')]/ingredient[@name='resourceFeather']/@count">3</set>
+
 </configs>
