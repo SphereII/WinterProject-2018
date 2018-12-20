@@ -13,15 +13,18 @@
   <setattribute xpath="/worldgeneration/biomes/biome/layers/layer[@depth][1]/resource" name="cluster">0</setattribute>
 
   <!-- Change the particle effect for the biomes, so we don't get a sandstorm -->
-  <set xpath="/worldgeneration/biomes/biome/weather/ParticleEffect/@prefab">ParticleEffects/p_snowstorm1</set>
+  <remove xpath="/worldgeneration/biomes/biome/weather/ParticleEffect" />
+  <append xpath="/worldgeneration/biomes/biome/weather" >
+    <ParticleEffect prefab="ParticleEffects/p_snowstorm1" ChunkMargin="7"/>
+  </append>
 
   <!-- Change the fill up to with ice, instead of water. I don't think this does anything though -->
   <set xpath="/worldgeneration/biomes/biome//layers/layer[@filluptorg]/@blockname">terrIce</set>
 
-  <!-- Set all global temperatures to be the same -->
-  <set xpath="/worldgeneration/biomes/biome/weather/Temperature/@min">-94</set>
-  <set xpath="/worldgeneration/biomes/biome/weather/Temperature/@max">-94</set>
-
+  <!-- Set all global temperatures to be the same range-->
+  <set xpath="/worldgeneration/biomes/biome/weather/Temperature/@min">-60</set>
+  <set xpath="/worldgeneration/biomes/biome/weather/Temperature/@max">-30</set>
+       
   <!-- Remove all surface biome decorations -->
   <remove xpath="/worldgeneration/biomes/biome//decorations/decoration" />
 
@@ -31,7 +34,15 @@
     <!-- From the XMas Pack -->
     <decoration type="block" blockname="ChristmasTreeNaughty" prob="0.00001" />
     <decoration type="block" blockname="ChristmasTreeNice" prob="0.00001" />
-    
+    <!-- Test Code
+    <decoration type="block" blockname="WinterBirch1" prob="0.01" rotatemax="7" />
+	  <decoration type="block" blockname="WinterBirch2" prob="0.01" rotatemax="7" />
+	  <decoration type="block" blockname="WinterPine1" prob="0.01" rotatemax="7" />
+    <decoration type="block" blockname="WinterPine2" prob="0.01" rotatemax="7" />
+	  <decoration type="block" blockname="WinterTree3" prob="0.01" rotatemax="7" />
+	  <decoration type="block" blockname="WinterTree5" prob="0.01" rotatemax="7" />	
+	-->
+	
     <!-- from Winter entities pack --> 
     <decoration type="block" blockname="SnowmanBlock" prob="0.00001" />
     <decoration type="block" blockname="SnowcopBlock" prob="0.00001" />

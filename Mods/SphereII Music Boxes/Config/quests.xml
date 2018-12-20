@@ -38,23 +38,24 @@
         <property name="quest_item_ID" value="1" />
         <property name="item_count" value="1" />
         <property name="default_container" value="cntFetchQuestSatchel" />
+
       </objective>
 
       <objective type="POIStayWithin">
-        <property name="phase" value="3" />
+        <property name="phase" value="4" />
         <property name="radius" value="25" />
       </objective>
 
       <objective type="ReturnToNPC">
-        <property name="phase" value="4" />
+        <property name="phase" value="5" />
       </objective>
 
       <objective type="InteractWithNPC">
-        <property name="phase" value="4" />
+        <property name="phase" value="6" />
       </objective>
     
       <reward type="Exp" value="1000" />
-      <reward type="LootItem" id="questMusic" value="1" ischosen="true" />
+      <reward type="LootItem" id="questMusic" ischosen="true" value="1" />
 
     </quest>
 
@@ -79,7 +80,7 @@
         <property name="phase" value="1" />
       </objective>
 
-      <objective type="RallyPoint">
+      <objective type="RallyPoint" >
         <property name="phase" value="2" />
       </objective>
 
@@ -88,23 +89,25 @@
         <property name="quest_item_ID" value="1" />
         <property name="item_count" value="1" />
         <property name="default_container" value="cntFetchQuestSatchel" />
+
       </objective>
 
       <objective type="POIStayWithin">
-        <property name="phase" value="3" />
+        <property name="phase" value="4" />
         <property name="radius" value="25" />
       </objective>
 
       <objective type="ReturnToNPC">
-        <property name="phase" value="4" />
+        <property name="phase" value="5" />
       </objective>
 
       <objective type="InteractWithNPC">
-        <property name="phase" value="4" />
+        <property name="phase" value="6" />
       </objective>
 
       <reward type="Exp" value="1000" />
-      <reward type="LootItem" id="questVideoPlayer" value="1" ischosen="true" />
+      <reward type="LootItem" id="questVideoPlayer" ischosen="true" value="1" />
+
 
     </quest>
   </insertBefore>

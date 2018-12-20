@@ -9,7 +9,8 @@
   
 	<set xpath="/blocks/block[@name='questRallyMarker']/property[@name='Model']/@value">#@modfolder:Resources/RallyFlags.unity3d?rally_pointprefab_X</set>
 	<append xpath="/blocks/block[@name='questRallyMarker']">
-		  <property name="ModelOffset" value="0,8,0"/>
+		  <property name="ModelOffset" value="0,8,0"/>  <!-- Flag model by s.probka is licensed under CC Attribution  -->
+	   
 	</append>
   
   
@@ -92,6 +93,7 @@
       <property name="Tag" value="TreeTrunk"/>
       <property name="IsPlant" value="true"/>
       <property name="ParticleOnDeath" value="treeGib_burnt"/>
+	  <drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
     </block>
     <block name="ChristmasTreeNice">
       <property name="CustomIcon" value="xmasTree" />
@@ -122,6 +124,7 @@
       <property name="Tag" value="TreeTrunk"/>
       <property name="IsPlant" value="true"/>
       <property name="ParticleOnDeath" value="treeGib_burnt"/>
+	  <drop event="Harvest" name="resourceWood" count="30" tag="oreWoodHarvest"/>
     </block>
     <block name="ChristmasTreeSmall">
       <property name="CustomIcon" value="xmasTree" />
@@ -141,6 +144,7 @@
       <property name="CreativeMode" value="Player"/>
       <property name="CanPlayersSpawnOn" value="false"/>
       <property name="ParticleOnDeath" value="treeGib_burnt"/>
+	   <drop event="Harvest" name="resourceWood" count="15" tag="oreWoodHarvest"/>
     </block>
     <block name="icicle">
       <property name="Material" value="Msnow" />
@@ -234,7 +238,7 @@
       <property name="Collide" value="movement,melee,bullet,arrow,rocket" />
       <property name="DescriptionKey" value="wreath" />
       <drop event="Destroy" count="0" />
-      <drop event="Harvest" name="wood" count="1" tool_category="harvestingTools" />
+      <drop event="Harvest" name="resourceWood" count="1" tag="oreWoodHarvest"/>
       <property name="ParticleOnDeath" value="treeGib_small_dust" />
     </block>
     <!--		<block name="stockings1">

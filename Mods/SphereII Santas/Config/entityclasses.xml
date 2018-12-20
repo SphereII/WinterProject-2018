@@ -48,7 +48,7 @@
 			<property name="SoundHurt" value="AbominableHurt" />
 			<property name="SoundSense" value="AbominableSense" /> 
 			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="80"/>
+				<passive_effect name="HealthMax" operation="base_set" value="800"/>
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 				<passive_effect name="EntityDamage" operation="perc_add" value="0"/> <!-- Feral damage -->
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>

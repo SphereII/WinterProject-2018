@@ -10,7 +10,7 @@
   </append>
 
   <append xpath="/lootcontainers">
-    <lootgroup name="questVideoPlayer" >
+    <lootgroup name="questVideoPlayer" count="1" >
       <item name="VideoPlayer"/>
       <item name="VideoPlayerTV" />
     </lootgroup>
@@ -18,6 +18,7 @@
     <lootgroup name="questMusic">
       <item name="Carousel" />
     </lootgroup>
+
     
   </append>
 

@@ -1,0 +1,3 @@
+﻿<configs>
+  <setattribute xpath="/quests/quest/objective[@type='RallyPoint']" name="optional">true</setattribute> 
+</configs>

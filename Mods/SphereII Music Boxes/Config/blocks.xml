@@ -62,5 +62,7 @@
 		  <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 		  <property name="LootList" value="98"/>
 		</block>
+
+
 	</append>
  </configs>

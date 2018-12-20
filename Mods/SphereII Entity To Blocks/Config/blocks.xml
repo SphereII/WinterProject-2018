@@ -1,12 +1,9 @@
 <configs>
-
   <append xpath="/blocks">
     <block name="Mannequin_01">
       <property name="Extends" value="woodFrameMaster"/>
       <property name="Model" value="cube_frame"/>
-
     </block>
   </append>
-        
 
 </configs>

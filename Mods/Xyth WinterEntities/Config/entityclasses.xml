@@ -1,9 +1,9 @@
 <configs>
 	<append xpath="/entity_classes">
 
-<!--		<entity_class name="Polarbear" extends="animalTemplateHostile">
+		<entity_class name="Polarbear" extends="animalTemplateHostile">
 			<property name="Tags" value="animal,hostile"/>
-			<property name="Mesh" value="#@modfolder:Resources/Polarbear.unity3d?Polarbear" /> 
+			<property name="Mesh" value="#@modfolder:Resources/Polarbear.unity3d?Polarbear_X" /> 
 			<property name="AvatarController" value="MecanimSDX, Mods" />
 			<property name="EntityType" value="Animal"/>
 			<property name="RootMotion" value="false" />
@@ -48,7 +48,7 @@
 				<passive_effect name="HealthMax" operation="base_set" value="800"/>
 				<passive_effect name="HealthMax" operation="perc_add" value="0"/> 
 			</effect_group>
-		</entity_class> -->
+		</entity_class> 
 		<entity_class name="ArcticFox" extends="animalTemplateTimid" >
 			<property name="Mesh" value="#@modfolder:Resources/ArcticFox.unity3d?ArcticFox_X" /> 
 			<property name="AvatarController" value="MecanimSDX, Mods" />
@@ -62,13 +62,14 @@
 		</entity_class>
 
 		<entity_class name="SealCub" extends="animalChicken" >
-			<property name="Mesh" value="#@modfolder:Resources/SealCub.unity3d?SealCub" /> 
+			<property name="Mesh" value="#@modfolder:Resources/SealCub.unity3d?SealCub_X" /> 
 			<property name="AvatarController" value="MecanimSDX, Mods" />
 			<property name="EntityType" value="Animal"/>
 			<property name="RootMotion" value="false" />
 			<property name="HasRagdoll" value="false" />
 			<property name="Parent" value="Animals"/>
 			<property name="Class" value="EntityAnimalRabbit"/>
+			<property name="MoveSpeedPanic" value=".8"/>
 			<property name="MaxViewAngle" value="360"/>
 			<property name="MaxTurnSpeed" value="180" />
 		</entity_class>
@@ -117,7 +118,7 @@
 			<property name="SoundHurt" value="AbominableHurt" />
 			<property name="SoundSense" value="AbominableSense" /> 
 			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="800"/>
+				<passive_effect name="HealthMax" operation="base_set" value="1000"/>
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 				<passive_effect name="EntityDamage" operation="perc_add" value="0"/> <!-- Feral damage -->
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
@@ -159,12 +160,12 @@
 			<property name="SoundHurt" value="AbominableHurt" />
 			<property name="SoundSense" value="AbominableSense" /> 
 			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="500"/>
+				<passive_effect name="HealthMax" operation="base_set" value="800"/>
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 				<passive_effect name="EntityDamage" operation="perc_add" value="0"/> <!-- Feral damage -->
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
+				<passive_effect name="HealthChangeOT" operation="base_set" value="1.4"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="8"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 			</effect_group>
 		</entity_class>
 		<entity_class name="Snowcop" extends="zombieFatCop"><!-- Snowman by junaidamin is licensed under CC Attribution -->
@@ -217,9 +218,9 @@
 				<passive_effect name="HealthMax" operation="base_set" value="900"/>
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 				<passive_effect name="EntityDamage" operation="perc_add" value="0"/> <!-- Feral damage -->
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
+				<passive_effect name="HealthChangeOT" operation="base_set" value="1.4"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="8"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 			</effect_group>			
 		</entity_class>
 
@@ -230,9 +231,9 @@
 			<property name="HasRagdoll" value="false" />
 			<property name="HandItem" value="handMaw" />
 			<property name="MaxHealth" value="500" />
-			<property name="MoveSpeed" value="0.08"/> <!-- just shambling around -->
-			<property name="MoveSpeedAggro" value="0.2, 1.25"/> <!-- chasing a target min/max (like day or night)-->
-			<property name="MoveSpeedPanic" value="0.55"/>
+			<property name="MoveSpeed" value="0.2"/> <!-- just shambling around -->
+			<property name="MoveSpeedAggro" value="0.3, 1.0"/> <!-- chasing a target min/max (like day or night)-->
+			<property name="MoveSpeedPanic" value="0.85"/>
 			<property name="PainResistPerHit" value=".65"/>
 			<property name="MaxViewAngle" value="270"/>
 			<property name="MaxTurnSpeed" value="250" />
@@ -252,12 +253,12 @@
 			<property name="SoundHurt" value="AbominableHurt" />
 			<property name="SoundSense" value="AbominableSense" /> 
 			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="900"/>
+				<passive_effect name="HealthMax" operation="base_set" value="700"/>
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
 				<passive_effect name="EntityDamage" operation="perc_add" value="0"/> <!-- Feral damage -->
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10"/>
+				<passive_effect name="HealthChangeOT" operation="base_set" value="1.4"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="8.1"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 			</effect_group>				
 		</entity_class>
 	
@@ -294,6 +295,11 @@
 			<property name="SoundAttack" value="Animals/Snake/snakeattack"/>
 			<property name="HasDeathAnim" value="true"/>
 			<property name="MaxTurnSpeed" value="100"/>
+			
+			<property name="MoveSpeed" value="0.2"/>
+			<property name="MoveSpeedAggro" value=".3, .3"/>
+			<property name="MoveSpeedPanic" value="0.3"/> 
+
 			<property name="HandItem" value="meleeHandAnimalSnake"/>
 			<property name="AttackTimeoutDay" value="1.5"/>
 			<property name="AttackTimeoutNight" value="1.1"/>
@@ -302,7 +308,7 @@
 			<drop event="Harvest" name="femur" tool_category="Butcher" count="1"/> 
 			<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="1"/>
 			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="10"/>
+				<passive_effect name="HealthMax" operation="base_set" value="30"/>
 				<passive_effect name="HealthMax" operation="perc_add" value="0"/> <!-- Animal HP scale -->
 			</effect_group>
 		</entity_class>	
