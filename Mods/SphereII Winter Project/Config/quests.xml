@@ -1,3 +1,10 @@
 ﻿<configs>
-  <setattribute xpath="/quests/quest/objective[@type='RallyPoint']" name="optional">true</setattribute> 
+  <!--
+  <insertBefore xpath="/quests/quest/objective[@type='RallyPoint']">
+    <action type="SpawnEnemy" id="Abominable" value="1" phase="2" />
+    <objective type="ZombieKill" id="Abominable" value="1" phase="2" />
+
+  </insertBefore>
+  <remove xpath="/quests/quest/objective[@type='RallyPoint']" />
+-->
 </configs>

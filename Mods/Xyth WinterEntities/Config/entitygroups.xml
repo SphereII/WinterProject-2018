@@ -1,9 +1,9 @@
 <configs>
-  <append xpath="/entitygroups/entitygroup[@name='AnimalsSmall']">
+  <append xpath="/entitygroups/entitygroup[ starts-with(@name, 'FriendlyAnimals')]">
     <entity name="SealCub" prob="0.5" />
   </append>
 
-  <append xpath="/entitygroups/entitygroup[@name='AnimalsAll']">
+  <append xpath="/entitygroups/entitygroup[ starts-with(@name, 'EnemyAnimals')]" >
     <entity name="DeadSnake" prob="0.5" />
     <entity name="ArcticFox" prob="0.5" />
     <entity name="Polarbear" prob="0.5" />
@@ -12,7 +12,7 @@
   <append xpath="/entitygroups/entitygroup[@name='ZombiesNight']">
     <entity name="Snowman" prob="0.5" />
     <entity name="Snowcop" prob="0.5" />
-    <entity name="Abominable" prob="0.0" />
+    <entity name="Abominable" prob="0.5" />
   </append>
 
   <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsForest']">
