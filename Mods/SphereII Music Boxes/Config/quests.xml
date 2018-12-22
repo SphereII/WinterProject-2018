@@ -25,33 +25,27 @@
       <property name="completiontype" value="TurnIn" />
       <property name="completion_key" value="quest_fetch_completion" />
 
-      <objective type="RandomPOIGoto">
-        <property name="phase" value="1" />
+      <objective type="TreasureChest">
+        <property name="block" value="cntBuriedStashChest" />
+        <property name="distance" value="1000-1750" />
+        <property name="container_type" value="Supplies" />
       </objective>
 
-      <objective type="RallyPoint">
+      <objective type="FetchFromTreasure">
+        <property name="block" value="cntBuriedStashChest" />
+        <property name="quest_item_ID" value="1" />
+        <property name="item_count" value="1" />
+      </objective>
+
+      <action type="SpawnEnemy" id="zombieArlene,zombieDarlene,zombieMarlene,zombieBoe,zombieJoe,zombieMoe,zombieYo" value="3-5" phase="2" />
+
+      <objective type="ReturnToNPC">
         <property name="phase" value="2" />
       </objective>
 
-      <objective type="FetchFromContainer">
-        <property name="phase" value="3" />
-        <property name="quest_item_ID" value="1" />
-        <property name="item_count" value="1" />
-        <property name="default_container" value="cntFetchQuestSatchel" />
-      </objective>
-
-      <objective type="POIStayWithin">
-        <property name="phase" value="4" />
-        <property name="radius" value="25" />
-      </objective>
-      <objective type="ReturnToNPC">
-        <property name="phase" value="5" />
-      </objective>
-
       <objective type="InteractWithNPC">
-        <property name="phase" value="6" />
+        <property name="phase" value="2" />
       </objective>
-
       <reward type="Exp" value="1000" />
       <reward type="LootItem" id="questMusic" ischosen="true" value="1" />
 
@@ -74,34 +68,29 @@
       <property name="completiontype" value="TurnIn" />
       <property name="completion_key" value="quest_fetch_completion" />
 
-      <objective type="RandomPOIGoto">
-        <property name="phase" value="1" />
+      <objective type="TreasureChest">
+        <property name="block" value="cntBuriedStashChest" />
+        <property name="distance" value="1000-1750" />
+        <property name="container_type" value="Supplies" />
       </objective>
 
-      <objective type="RallyPoint">
+      <objective type="FetchFromTreasure">
+        <property name="block" value="cntBuriedStashChest" />
+        <property name="quest_item_ID" value="2" />
+        <property name="item_count" value="1" />
+      </objective>
+
+      <action type="SpawnEnemy" id="zombieArlene,zombieDarlene,zombieMarlene,zombieBoe,zombieJoe,zombieMoe,zombieYo" value="3-5" phase="2" />
+
+      <objective type="ReturnToNPC">
         <property name="phase" value="2" />
       </objective>
 
-      <objective type="FetchFromContainer">
-        <property name="phase" value="3" />
-        <property name="quest_item_ID" value="1" />
-        <property name="item_count" value="1" />
-        <property name="default_container" value="cntFetchQuestSatchel" />
-      </objective>
-
-      <objective type="POIStayWithin">
-        <property name="phase" value="4" />
-        <property name="radius" value="25" />
-      </objective>
-      <objective type="ReturnToNPC">
-        <property name="phase" value="5" />
-      </objective>
-
       <objective type="InteractWithNPC">
-        <property name="phase" value="6" />
+        <property name="phase" value="2" />
       </objective>
-
       <reward type="Exp" value="1000" />
+      
       <reward type="LootItem" id="questVideoPlayer" ischosen="true" value="1" />
 
 
